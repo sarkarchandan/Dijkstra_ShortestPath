@@ -10,6 +10,11 @@
 		9EDC83751F4B15630028C910 /* ShortestPath_Final.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDC836B1F4B15630028C910 /* ShortestPath_Final.framework */; };
 		9EDC837A1F4B15630028C910 /* ShortestPath_FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC83791F4B15630028C910 /* ShortestPath_FinalTests.swift */; };
 		9EDC837C1F4B15630028C910 /* ShortestPath_Final.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC836E1F4B15630028C910 /* ShortestPath_Final.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDC83881F4B15900028C910 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC83871F4B15900028C910 /* Node.swift */; };
+		9EDC838A1F4B15C50028C910 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC83891F4B15C50028C910 /* Edge.swift */; };
+		9EDC838C1F4B15E10028C910 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC838B1F4B15E10028C910 /* Graph.swift */; };
+		9EDC838E1F4B15FF0028C910 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC838D1F4B15FF0028C910 /* Path.swift */; };
+		9EDC83901F4B164A0028C910 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC838F1F4B164A0028C910 /* Dijkstra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		9EDC83741F4B15630028C910 /* ShortestPath_FinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortestPath_FinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDC83791F4B15630028C910 /* ShortestPath_FinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPath_FinalTests.swift; sourceTree = "<group>"; };
 		9EDC837B1F4B15630028C910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDC83871F4B15900028C910 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9EDC83891F4B15C50028C910 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		9EDC838B1F4B15E10028C910 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		9EDC838D1F4B15FF0028C910 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		9EDC838F1F4B164A0028C910 /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,8 @@
 		9EDC836D1F4B15630028C910 /* ShortestPath_Final */ = {
 			isa = PBXGroup;
 			children = (
+				9EDC83861F4B15780028C910 /* Implementation */,
+				9EDC83851F4B156F0028C910 /* Model */,
 				9EDC836E1F4B15630028C910 /* ShortestPath_Final.h */,
 				9EDC836F1F4B15630028C910 /* Info.plist */,
 			);
@@ -84,6 +96,25 @@
 				9EDC837B1F4B15630028C910 /* Info.plist */,
 			);
 			path = ShortestPath_FinalTests;
+			sourceTree = "<group>";
+		};
+		9EDC83851F4B156F0028C910 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC83871F4B15900028C910 /* Node.swift */,
+				9EDC83891F4B15C50028C910 /* Edge.swift */,
+				9EDC838B1F4B15E10028C910 /* Graph.swift */,
+				9EDC838D1F4B15FF0028C910 /* Path.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EDC83861F4B15780028C910 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC838F1F4B164A0028C910 /* Dijkstra.swift */,
+			);
+			name = Implementation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					9EDC836A1F4B15630028C910 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9EDC83731F4B15630028C910 = {
@@ -196,6 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDC838C1F4B15E10028C910 /* Graph.swift in Sources */,
+				9EDC838A1F4B15C50028C910 /* Edge.swift in Sources */,
+				9EDC838E1F4B15FF0028C910 /* Path.swift in Sources */,
+				9EDC83881F4B15900028C910 /* Node.swift in Sources */,
+				9EDC83901F4B164A0028C910 /* Dijkstra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +359,7 @@
 		9EDC83801F4B15630028C910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.favendo.ShortestPath-Final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +379,7 @@
 		9EDC83811F4B15630028C910 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +398,7 @@
 		9EDC83831F4B15630028C910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ShortestPath_FinalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.favendo.ShortestPath-FinalTests";
@@ -369,6 +410,7 @@
 		9EDC83841F4B15630028C910 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ShortestPath_FinalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.favendo.ShortestPath-FinalTests";
