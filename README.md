@@ -1,6 +1,6 @@
 # Dijkstra's Shortest Path Implementation.
 
-### This Cocoa framework project provides an implementation of the Dijkstra's Shortest Path algorithm. Dijkstra's algorithm is a greedy algorithm that trusts on the local optimal decisions with a hope to come up with the global optimal result.
+####  This Cocoa framework project provides an implementation of the Dijkstra's Shortest Path algorithm. Dijkstra's algorithm is a greedy algorithm that trusts on the local optimal decisions with a hope to come up with the global optimal result.
 
 ### Mainrainer:
 * Chandan Sarkar
@@ -23,3 +23,6 @@
 * Test case for a graph where the destination node is disjoint.
 * Test case for an empty graph with no zero nodes or edges.
 * Test case for a graph with two alternate paths with same cost.
+
+## # To Do
+#### Currently the algorithm runs in O(n^2) time. However, we could improve the running time complexity to logarithmic time using a min heap data structure as a priority queue. We will be working on that.
