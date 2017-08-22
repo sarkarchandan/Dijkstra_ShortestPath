@@ -50,13 +50,6 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         edge_3_9 = MyEdge(node_3, to: node_9)
         edge_3_15 = MyEdge(node_3, to: node_15)
         edge_9_15 = MyEdge(node_9, to: node_15)
-        
-        
-//        let singleNodeGraphNodeList: [MyNode] = [node_1]
-//        let singleNodeGraphEdgeList: [MyEdge] = []
-//        singleNodeGraph = MyGraph(with: singleNodeGraphNodeList, and: singleNodeGraphEdgeList)
-        
-        
     }
     
     override func tearDown() {
@@ -64,7 +57,7 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         print("Nothing to tear down...")
     }
     
-    //Test function for the Dijkstra Shortest Path implementation
+    //Usual test case for an expected shortest path in a dense graph.
     func testDijkstraShortestPath(){
         //Given
         let nodeList: [MyNode] = [node_1,node_4,node_6,node_3,node_9,node_15]
@@ -80,6 +73,7 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         XCTAssertEqual(actualResult, expectedResult)
     }
     
+    //Test case for a graph with the single node.
     func testDijkstraForSingleNode() {
         //Given
         let singleNodeGraphNodeList: [MyNode] = [node_1]
@@ -95,6 +89,7 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         XCTAssertEqual(actualResult, expectedResult)
    }
     
+    //Test case for a graph where the destination node is disjoint
     func testDijkstraCouldNotReachDestination() {
         //Given
         let nodeList: [MyNode] = [node_1,node_4,node_6,node_3,node_9,node_15]
@@ -110,6 +105,7 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         XCTAssertEqual(actualResult, expectedResult)
     }
     
+    //Test case for an empty graph with no zero nodes or edges.
     func testDijkstraWithEmptyGraph() {
         //Given
         let nodeList: [MyNode] = []
@@ -125,6 +121,7 @@ class Dijkstra_ShortestPathTests: XCTestCase {
         XCTAssertEqual(actualResult, expectedResult)
     }
     
+    //Test case for a graph with two alternate paths with same cost.
     func testDijkstraWithToSolutionsWithSameLength() {
         //Given
         let startNode = MyNode(with: 100, at: CLLocation(latitude: 10.0, longitude: 10.0))
