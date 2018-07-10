@@ -2,7 +2,7 @@
 
 ####  This Cocoa framework project provides an implementation of the Dijkstra's Shortest Path algorithm. Dijkstra's algorithm is a greedy algorithm that trusts on the local optimal decisions with a hope to come up with the global optimal result.
 
-### Mainrainer:
+### Maintainer:
 * Chandan Sarkar
 * Alexander Albert
 
